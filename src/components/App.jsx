@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Header from './components/Header';
-import NoteForm from './components/NoteForm';
-import NoteList from './components/NoteList';
-import './App.css';
+import Header from './Header';
+import NoteForm from './NoteForm';
+import NoteList from './NoteList';
+import './styles/App.css';
 
 function App() {
   
