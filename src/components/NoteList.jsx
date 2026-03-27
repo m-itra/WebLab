@@ -1,8 +1,8 @@
 import NoteItem from './NoteItem';
 import './styles/NoteList.css';
 
-function NoteList({ notes, onDeleteNote }) {
-  // Если заметок нет, показываем сообщение
+function NoteList({ notes, onDelete, onEdit }) {
+
   if (notes.length === 0) {
     return (
       <div className="note-list-empty">
@@ -16,10 +16,11 @@ function NoteList({ notes, onDeleteNote }) {
       <h2>Ваши заметки</h2>
       <div className="notes-grid">
         {notes.map(note => (
-          <NoteItem 
-            key={note.id} 
-            note={note} 
-            onDelete={onDeleteNote} 
+          <NoteItem
+            key={note.id}
+            note={note}
+            onDelete={onDelete}
+            onEdit={onEdit}
           />
         ))}
       </div>

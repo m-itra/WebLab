@@ -88,3 +88,28 @@
     font-size: 1.1rem;
   }
 }
+
+.note-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.btn-edit {
+  background: #e8f0fe;
+  border: none;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-edit:hover {
+  background: #c5d3f7;
+  transform: scale(1.1);
+}

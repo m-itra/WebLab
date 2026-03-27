@@ -53,3 +53,35 @@
     justify-content: center;
   }
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.status-badge {
+  font-size: 0.875rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+  transition: all 0.3s ease;
+}
+
+.status-error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status-editing {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.status-creating {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
