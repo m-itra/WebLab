@@ -1,12 +1,12 @@
 import NoteItem from './NoteItem';
+import Pagination from './Pagination';
 import './styles/NoteList.css';
 
-function NoteList({ notes, onDelete, onEdit }) {
-
+function NoteList({ notes, onDelete, onEdit, currentPage, totalPages, onPageChange }) {
   if (notes.length === 0) {
     return (
       <div className="note-list-empty">
-        <p>У вас пока нет заметок</p>
+        <p>Заметки не найдены</p>
       </div>
     );
   }
@@ -24,6 +24,11 @@ function NoteList({ notes, onDelete, onEdit }) {
           />
         ))}
       </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={onPageChange}
+      />
     </div>
   );
 }
